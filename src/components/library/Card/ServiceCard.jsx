@@ -28,11 +28,11 @@ const ServiceCard = ({ service }) => {
 
   const bookAppointment = () => {
       axios.post(`/appointments/${selectedAppointmentId}`, {
-        email: 'customer@example.com',
-        name: 'John Doe',
+        email: 'test@test.com',
+        name: 'Utente Prova',
         modelYear: 2020,    
         make: 'Toyota',
-        model: 'Camry'
+        model: 'Aygo'
       })
       .then(response => {
         console.log('Appointment booked:', response.data);
