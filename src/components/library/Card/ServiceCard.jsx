@@ -36,7 +36,6 @@ const ServiceCard = ({ service }) => {
       })
       .then(response => {
         console.log('Appointment booked:', response.data);
-        // Puoi fare qualcosa qui dopo aver prenotato con successo, come mostrare una notifica all'utente
       })
       .catch(error => {
         console.error('Error booking appointment:', error);
